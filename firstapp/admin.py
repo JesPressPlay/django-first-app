@@ -9,7 +9,7 @@ class LessonInline(admin.StackedInline):
     extra = 5
 
 class CourseAdmin(admin.ModelAdmin):
-    fields = ['pub_date', 'name', 'description']
+    fields = ['pub_date', 'name', 'description', 'total_enrollment']
     inlines = [LessonInline]
 
 # Register your models here.
